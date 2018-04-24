@@ -162,7 +162,20 @@
           "downloadURL": {
             "type": "string",
             "format": "uri",
-            "description": "The URL where a distribution of the release can be found."
+            "description": "The URL where a distribution of the release can be found.",
+            "checksum": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "description": "checksum value such as b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9"
+                },
+                "algorithm": {
+                  "type": "string",
+                  "description": "algorithm used to generate checksum such as SHA256"
+                }
+              }
+            }
           },
           "disclaimerURL": {
             "type": "string",
